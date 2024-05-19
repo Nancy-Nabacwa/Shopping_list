@@ -56,3 +56,12 @@ function addeditItem(item){
     td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editItem(this);">'
     document.getElementById("item_table").replaceChild(tr, s)
 }
+
+// home styling
+function addList(){
+    let name = document.list_form.list_name.value;
+    let tr = document.createElement('tr');
+    let td1 = tr.appendChild(document.createElement('td'));
+    td1.innerHTML = name;
+    document.getElementById("item_table").appendChild(tr)
+}
