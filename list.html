@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="list-info-container">
+        <div class="restocklogo">
+            <div>
+                <img src="Pics/Screenshot_2024-05-18_190514-removebg-preview.png" id="logo">
+               <h1 class="appname"><b>Restock Rush</b></h1>
+            </div>
+
+            <div>
+                <img src="" alt="backarrow">
+            </div>            
+
+        </div>
+        <h1 style="text-align: center; color: orange;">Your List</h1>
+        <div class="main-container">
+            <form action="" name="item_form">
+                    Item Name:
+                    <input type="text" placeholder="Enter Item Name" name="item_name" class="item_input">
+                    Item Quantity:
+                    <input type="number" placeholder="Enter Item Quantity" name="item_quantity" class="item_input"><br><br>
+                <div>
+                    <input type="button" value="Add" id="add_button" name="add" onclick="addItem(); ">
+                </div><br><br>
+                    <table id="item_table">
+                        <thead>
+                                <th>Item name</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                                <th>Update</th>
+                        </thead>
+                        <tbody  class="table-item done">
+                            <!-- <tr>
+                                <td>Milk</td>
+                                <td>2</td>
+                              <td>
+                                <button id="table-edit-button">Edit</button>
+                                <button id="table-delete-button">Delete</button>
+                              </td>
+                            </tr>  -->
+                        </tbody>
+                    </table>
+            </form>
+        </div>
+        <!-- <div id="input-submission">
+            <input type="text" placeholder="Add Item">
+            <button>Add</button>
+        </div>
+        <div id="table-section">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Item.no</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="table-item done">
+                    <tr>
+                        <td>1</td>
+                        <td>Milk</td>
+                        <td>2</td>
+                      <td>
+                        <button id="table-edit-button">Edit</button>
+                        <button id="table-delete-button">Delete</button>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
