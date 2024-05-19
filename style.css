@@ -1,0 +1,73 @@
+body{
+    margin-left: 5%;
+    margin-right: 6%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.appname{
+    color: orange;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -70px ;
+    margin-top: -2%;
+}
+#restock-container{
+    
+    margin: 80px auto;    
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 50px;
+}
+#welcome-paragraph{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.welcome_heading{
+    font-size: 50px;
+    color: orange;
+}
+#welcome-paragraph p{
+    font-size: 25px;
+    line-height: 1.8;
+    
+}
+#already-paragraph{
+    font-size: 25px;
+}
+#already-paragraph a{
+    text-decoration: none;
+    color: orange;
+}
+.restocklogo{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 15%;
+}
+
+
+#landing_page{
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    margin-top: -5%;
+}
+
+#landing-page-button{
+    width: 60%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border-radius: none;
+    border-color: transparent;
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+}
+
+.shopping_basket{
+    width: 250%;
+    margin-left: -90%;
+    
+}
