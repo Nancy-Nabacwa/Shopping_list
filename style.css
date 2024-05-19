@@ -107,7 +107,7 @@ body{
   margin-left: 544px;
 }
 
-#list-button{
+.list-button{
     border-color:  orange;
     width: 158px;
     height: 108px;
@@ -201,4 +201,8 @@ color: red;
     border-radius: 50px;
     border: none;
     background-color: #E0E0E0;
+}
+#arrow{
+    margin-left:780px;
+    height:40px;
 }
