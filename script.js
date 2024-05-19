@@ -7,36 +7,42 @@ function redirectToPage(){
 redirectButton.addEventListener('click', redirectToPage)
 
 
-// let availableKeywords = [
-//     "Toiletries", "Groceries"
-//  ];
-//  const resultBox = document.querySelector(".result-box");
-//  const inputBox = document.querySelector(".input-box");
-
-// inputBox.onkeyup = function(){
-//     let result = [];
-//   let input = inputBox.ariaValueMax;
-//     if(input.length){
-//         result = availableKeywords.filter((keyword)=>{
-//                  keyword.toLowerCase().includes(input.toLowerCase());
-//         });
-
+//
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+    const resultsList = document.getElementById('resultsList');
+  
+    function getResults(input) {
+        const items = ['List 2', 'Clothes', 'Groceries', 'Toiletries', 'List 1']; 
+        const filteredItems = items.filter(item => item.toLowerCase().includes(input.toLowerCase()));
+        resultsList.innerHTML = ''; 
+        filteredItems.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            resultsList.appendChild(listItem);
+        });
+    }
+   
+    searchInput.addEventListener('keyup', function(e) {
+        getResults(this.value);
+    });
     
-//         console.log(result)
-//      }
-//     display(result);
-//  }
+    searchButton.addEventListener('click', function() {
+        getResults(search-input.value);
+    });
+    display(result)
+});
+function display(result){
+    const content = result.map((lisr)=>{
+        return "<li onclick = selectInput(this)>" + list + "</li>";
+    });
 
-// function display(result){
-//     const content = result.map((lisr)=>{
-//         return "<li onclick=selectInput(this)>" + list + "</li>";
-//     });
-
-//     resultBox.innerHTML = "<li>" + content + "</li>";
-// }
-// function selectInput(list){
-//     inputBox.value = list.innerHTML
-// }
+    resultBox.innerHTML = "<li>" + content.join('') + "</li>";
+}
+function selectInput(list){
+    inputBox.value = list.innerHTML
+}
 
 
 

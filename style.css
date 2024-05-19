@@ -87,7 +87,28 @@ body{
     padding: 40px;
     border-radius: 50px;
 }
+#resultBox ul{
 
+padding: 15px 1opx;
+}
+#resultBox ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+#resultBox ul li:hover{
+    background-color: #FFD580;
+}
+/* #searchInput {
+    padding: 10px;
+    font-size: 16px;
+} */
+#resultsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
 #search-button{
     border-radius: 50px;
     height:60px;
@@ -98,7 +119,9 @@ body{
     border: none;
     border-color: orange;
     background-color: orange;
+    cursor: pointer;
 }
+
 
 #list-buttons{
     margin-top: 50px;
