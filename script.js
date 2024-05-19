@@ -1,10 +1,43 @@
 const redirect = document.getElementById('redirectButton');
  
 function redirectToPage(){
-    window.location.href = "lists.html"
+    window.location.href = "list.html"
 
 }
 redirectButton.addEventListener('click', redirectToPage)
+
+
+// let availableKeywords = [
+//     "Toiletries", "Groceries"
+//  ];
+//  const resultBox = document.querySelector(".result-box");
+//  const inputBox = document.querySelector(".input-box");
+
+// inputBox.onkeyup = function(){
+//     let result = [];
+//   let input = inputBox.ariaValueMax;
+//     if(input.length){
+//         result = availableKeywords.filter((keyword)=>{
+//                  keyword.toLowerCase().includes(input.toLowerCase());
+//         });
+
+    
+//         console.log(result)
+//      }
+//     display(result);
+//  }
+
+// function display(result){
+//     const content = result.map((lisr)=>{
+//         return "<li onclick=selectInput(this)>" + list + "</li>";
+//     });
+
+//     resultBox.innerHTML = "<li>" + content + "</li>";
+// }
+// function selectInput(list){
+//     inputBox.value = list.innerHTML
+// }
+
 
 
 // list script
