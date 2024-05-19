@@ -65,9 +65,57 @@ body{
     color: white;
     font-size: 25px;
 }
+#landing-page-button a{
+    text-decoration: none;
+    color: white;
+} 
 
 .shopping_basket{
     width: 250%;
     margin-left: -90%;
     
+}
+
+#shopping-list{
+    margin-left:574px;
+    color:  orange;
+}
+
+#search-input{
+    font-size: 25px;
+    height: 0px;
+    width: 68%;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+#search-button{
+    border-radius: 50px;
+    height:60px;
+    width:200px;
+    font-size: 25px;
+    margin-left: -17%;
+    color: white;
+    border: none;
+    border-color: orange;
+    background-color: orange;
+}
+
+#list-buttons{
+    margin-top: 50px;
+    display: flex;
+    gap:3%;
+  margin-left: 544px;
+}
+
+#list-button{
+    border-color:  orange;
+    width: 158px;
+    height: 108px;
+}
+
+#add-button{
+    border-color:  orange;
+    width: 158px;
+    height: 108px;
 }
