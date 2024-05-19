@@ -19,27 +19,16 @@
         <a href="list.html"><img src="Pics/forwardArrow.png" alt="forwardArrow" class="forwardArrow"></a>
     </div>
 
-    <div id="landing-page">
-        <h1 id="shopping-list">Shopping Lists</h1>
-    </div>
 
-    <div class="main-container">
-        <form action="" name="list_form">
-                <input type="text" placeholder="Enter list Name" name="list_name" class="item_input">
-                <input type="button" value="Add" id="add_button" name="add" onclick="addList(); ">
-                <br><br>
-                <table id="item_table">
-                    <thead>
-                            <th>List name</th>
-                            <th>Delete</th>
-                            <th>Update</th>
-                            <th>View</th>
-                    </thead>
-                    <tbody  class="table-item done">
-                       
-                    </tbody>
-                </table>
+    <div class="container">
+        <h1>Shopping List Manager</h1>
+        <form id="addListForm">
+            <input type="text" id="listName" placeholder="List Name" required>
+            <input type="text" id="categoryName" placeholder="Category Name" required>
+            <button type="submit">Add List</button>
         </form>
+        <button id="clearAllLists">Clear All Lists</button>
+        <ul id="lists"></ul>
     </div>
 
     

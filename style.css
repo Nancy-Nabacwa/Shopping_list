@@ -116,14 +116,30 @@ form button {
 }
 
 #shopping-list{
-    margin-left:574px;
+    margin-left:40%;
+    margin-bottom: 2%;
     color:  orange;
 }
 
+#search-input{
+    font-size: 25px;
+    height: 0px;
+    width: 68%;
+    padding: 40px;
+    border-radius: 50px;
+}
 
-
-
-
+#search-button{
+    border-radius: 50px;
+    height:60px;
+    width:200px;
+    font-size: 25px;
+    margin-left: -17%;
+    color: white;
+    border: none;
+    border-color: orange;
+    background-color: orange;
+}
 
 
 .restocklogo img {
@@ -160,4 +176,49 @@ form button {
     margin-left: 70%;
     margin-top: -5%;
 }
-
+tr td{
+    font-size: 30px;
+    text-align: center;
+}
+tr:hover td{
+    color: orange;
+    cursor: pointer;
+}
+#edit_btn{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#delete_btn{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    color: black;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#delete_btn:hover{
+color: red;
+}
+.table-item.done{
+    text-decoration: line-through;
+    color: gray;
+}
+#add_button{
+    width: 500px;
+    margin-left: 30%;
+    font-size: 25px;
+    color: orange;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-color: #E0E0E0;
+}
