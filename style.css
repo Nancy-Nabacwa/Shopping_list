@@ -2,15 +2,14 @@ body{
     margin-left: 5%;
     margin-right: 6%;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .appname{
     color: orange;
-    font-weight: 900;
+    font-size: xx-large;
+    font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: -70px ;
-    margin-top: -2%;
-}
+} 
 #restock-container{
     margin: 80px auto;    
     flex-wrap: wrap;
@@ -43,7 +42,7 @@ body{
 }
 
 #logo{
-    width: 15%;
+    width: 83%;
 }
 
 
@@ -87,28 +86,7 @@ body{
     padding: 40px;
     border-radius: 50px;
 }
-#resultBox ul{
 
-padding: 15px 1opx;
-}
-#resultBox ul li{
-    list-style: none;
-    border-radius: 3px;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-#resultBox ul li:hover{
-    background-color: #FFD580;
-}
-/* #searchInput {
-    padding: 10px;
-    font-size: 16px;
-} */
-#resultsList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
 #search-button{
     border-radius: 50px;
     height:60px;
@@ -119,9 +97,7 @@ padding: 15px 1opx;
     border: none;
     border-color: orange;
     background-color: orange;
-    cursor: pointer;
 }
-
 
 #list-buttons{
     margin-top: 50px;
@@ -130,7 +106,7 @@ padding: 15px 1opx;
   margin-left: 544px;
 }
 
-.list-button{
+#list-button{
     border-color:  orange;
     width: 158px;
     height: 108px;
@@ -142,7 +118,6 @@ padding: 15px 1opx;
     height: 108px;
 }
 
-/* list styling */
 .item_input{
     width: 400px;
     height: 50px;
@@ -225,15 +200,126 @@ color: red;
     border: none;
     background-color: #E0E0E0;
 }
-#arrow{
-    margin-left:780px;
-    height:40px;
+
+.restocklogo img {
+    max-width: 200%;
+    height: auto;
+    gap: 2%; 
 }
 
+#backArrow{
+    width: 23px;
+    height: 10px;
+    margin-left: 30%;
+}
+#landing-page {
+    padding: 20px;
+}
+#list-buttons form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.item_input {
+    margin-bottom: 10px;
+}
 
+#logo{
+    width: 43%;
+    height: 140px;
+}
+.logocontent{
+    display: flex;
+    gap: 1%;
+}
+.backArrow{
+    width: 40px;
+    height: 20px;
+}
+.forwardArrow{
+    width: 40px;
+    height: 20px;
+}
+#forwardbackward-arrow{
+    display: flex;
+    gap: 20%;
+    margin-left: 70%;
+    margin-top: -5%;
+}
+@media (min-width: 280px) and (min-width:750ox){
+   body{
+    
+   }
+    .restocklogo img {
+        width: 50%; 
+    }
+    #arrow{
+        height: 10px;
+        margin-left: 308px;
+        width: 23px;
+    }
 
+   .appname {
+        font-size: 18px;
+    }
+    #add_button{
+        width: 300px;
+        font-size: 15px;
+        color: orange;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        background-color: #E0E0E0;
+    }
+    .table-item.done{
+        text-decoration: line-through;
+        color: gray;
+        display: block;
+        width: 23px;
+        font-size: medium;
+    }
+.main-container{
+    display: block;
+}
+    #landing-page {
+        padding: 15px;
+    }
 
+    #list-buttons form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .restocklogo{
+        display: block;
+        align-items: center;
+    }
+   .item_input {
+        margin-bottom: 5px;
+    }
+    #add-list{
+        display: flex;
+    }
+ 
+#search-button{
+    border-radius: 50px;
+    height:60px;
+    width:200px;
+    font-size: 25px;
+    display: block;
+    color: white;
+    border: none;
+    border-color: orange;
+    background-color: orange;
+}
 
+#search-buttons{
+    border-radius: 50px;
+    height:60px;
+    width:200px;
+    font-size: 25px;
+    display: block;
 
-
+}
+}
