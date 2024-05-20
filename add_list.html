@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping_List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
     <div class="restocklogo">
@@ -13,49 +14,28 @@
     </div>
 
     <div id="landing-page">
-        <div>
-        <h1 id="shopping-list">Shopping Lists</h1>
-    <form id="search-buttons" action="#">
-        <input id="search-input" type="text" placeholder="Search Item" autocomplete="off">
-        <button type="submit" id="search-button">Search</button>
     
-    </form>
-    <div id="resultBox">
-    <ul id="resultsList">
-    <!-- blank -->
-    </ul>
-    </div>
+        <h1 id="shopping-list">Shopping Lists</h1>
     </div>
 
-    <div id="list-buttons">
+    <div class="main-container">
         <form action="" name="list_form">
-            <input type="text" placeholder="Enter List Name" name="list_name" class="item_input">
-        <div>
-          
-            <button id="add-button"></button>
-        </div>
-        <div >
-            <button id="redirectButton" class="list-button">List 1 <link rel="list" href="add.html"></button>
-        </div>
-        <div>
-            <button class="list-button">List 2</button>
-        </div>
-      
-            <input type="button" value="Add" id="add_button" name="add" onclick="addList(); ">
-        </div><br><br>
-            <table id="item_table">
-                <thead>
-                        <th>List Name</th>
-                </thead>
-                <tbody  class="table-item done">
-                   
-                </tbody>
-            </table>
-    </form>
-
+                <input type="text" placeholder="Enter list Name" name="list_name" class="item_input">
+                <input type="button" value="Add" id="add_button" name="add" onclick="addList(); ">
+                <br><br>
+                <table id="item_table">
+                    <thead>
+                            <th>List name</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                            <th>View</th>
+                    </thead>
+                    <tbody  class="table-item done">
+                       
+                    </tbody>
+                </table>
+        </form>
     </div>
-
-<script src="script.js"></script>
 
 <script src="script.js"></script>
     
