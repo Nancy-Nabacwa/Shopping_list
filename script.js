@@ -1,4 +1,5 @@
 const redirect = document.getElementById('redirectButton');
+
  
 function redirectToPage(){
     window.location.href = "list.html"
@@ -60,6 +61,7 @@ function addItem(){
     td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
     td4.innerHTML ='<input type="button" value="edit" name="edit_btn"  id="edit_btn" onclick="editItem(this);">'
     document.getElementById("item_table").appendChild(tr)
+    
 }
 function deleteItem(item){
     let s = item.parentNode.parentNode;
@@ -101,6 +103,45 @@ function addList(){
     let name = document.list_form.list_name.value;
     let tr = document.createElement('tr');
     let td1 = tr.appendChild(document.createElement('td'));
+    let td3 = tr.appendChild(document.createElement('td'));
+    let td4 = tr.appendChild(document.createElement('td'));
+    let td2 = tr.appendChild(document.createElement('td'));
     td1.innerHTML = name;
+    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
+    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
+    td4.innerHTML ='<input type="button" value="edit" name="edit_btn"  id="edit_btn" onclick="editList(this);">'
     document.getElementById("item_table").appendChild(tr)
 }
+
+function editList(list){
+    let name = document.list_form.list_name.value;
+    let l = list.parentNode.parentNode;
+    let tr = document.createElement('tr');
+    let td1 = tr.appendChild(document.createElement('td'));
+    let td2 = tr.appendChild(document.createElement('td'));
+    let td3 = tr.appendChild(document.createElement('td'));
+    let td4 = tr.appendChild(document.createElement('td'));
+    td1.innerHTML = '<input type="text" placeholder="Enter New List Name" class="item_input" name="edit_name">';
+    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
+    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
+    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editedList(this);">'
+    document.getElementById("item_table").replaceChild(tr, l)
+}
+
+function editedList(list){
+    let name = document.list_form.edit_name.value;
+    let l = list.parentNode.parentNode;
+    let tr = document.createElement('tr');
+    let td1 = tr.appendChild(document.createElement('td'));
+    let td2 = tr.appendChild(document.createElement('td'));
+    let td3 = tr.appendChild(document.createElement('td'));
+    let td4 = tr.appendChild(document.createElement('td'));
+    td1.innerHTML = name;
+    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
+    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
+    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editList(this);">'
+    document.getElementById("item_table").replaceChild(tr, l)
+}
+
+
+
