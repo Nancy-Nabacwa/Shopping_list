@@ -1,147 +1,174 @@
-const redirect = document.getElementById('redirectButton');
+
 
  
-function redirectToPage(){
-    window.location.href = "list.html"
+// document.addEventListener('DOMContentLoaded', () => {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const listName = urlParams.get('list');
+//     const categoryName = urlParams.get('category');
+//     const listTitle = document.getElementById('listTitle');
+//     const addItemForm = document.getElementById('addItemForm');
+//     const itemNameInput = document.getElementById('itemName');
+//     const itemQuantityInput = document.getElementById('itemQuantity');
+//     const shoppingList = document.getElementById('shoppingList');
+//     const clearListButton = document.getElementById('clearList');
+//     listTitle.textContent = `${listName} - ${categoryName}`;
+//     loadItems();
+//     addItemForm.addEventListener('submit', (e) => {
+//         e.preventDefault();
+//         const itemName = itemNameInput.value;
+//         const itemQuantity = itemQuantityInput.value;
+//         addItem(itemName, itemQuantity);
+//         saveItem(itemName, itemQuantity);
+//         itemNameInput.value = '';
+//         itemQuantityInput.value = '';
+//     });
+//     clearListButton.addEventListener('click', () => {
+//         shoppingList.innerHTML = '';
+//         clearItems();
+//     });
+//     function loadItems() {
+//         const savedItems = JSON.parse(localStorage.getItem(listName)) || [];
+//         savedItems.forEach(item => addItem(item.name, item.quantity, item.bought));
+//     }
+//     function addItem(name, quantity, bought = false) {
+//         const listItem = document.createElement('li');
+//         listItem.innerHTML = `
+//             <input type="text" value="${name}" class="item-name">
+//             <input type="number" value="${quantity}" class="item-quantity">
+//             <div>
+//                 <button class="markBought">Bought</button>
+//                 <button class="removeItem">Remove</button>
+//             </div>
+//         `;
+//         const nameInput = listItem.querySelector('.item-name');
+//         const quantityInput = listItem.querySelector('.item-quantity');
+//         nameInput.addEventListener('input', () => {
+//             updateItem(name, nameInput.value, quantityInput.value, listItem.classList.contains('bought'));
+//         });
+//         quantityInput.addEventListener('input', () => {
+//             updateItem(name, nameInput.value, quantityInput.value, listItem.classList.contains('bought'));
+//         });
+//         listItem.querySelector('.markBought').addEventListener('click', () => {
+//             listItem.classList.toggle('bought');
+//             updateItem(name, nameInput.value, quantityInput.value, listItem.classList.contains('bought'));
+//         });
+//         listItem.querySelector('.removeItem').addEventListener('click', () => {
+//             shoppingList.removeChild(listItem);
+//             removeItem(name);
+//         });
+//         if (bought) {
+//             listItem.classList.add('bought');
+//         }
+//         shoppingList.appendChild(listItem);
+//     }
+//     function saveItem(name, quantity, bought = false) {
+//         const savedItems = JSON.parse(localStorage.getItem(listName)) || [];
+//         savedItems.push({ name, quantity, bought });
+//         localStorage.setItem(listName, JSON.stringify(savedItems));
+//     }
+//     function updateItem(oldName, newName, newQuantity, bought) {
+//         let savedItems = JSON.parse(localStorage.getItem(listName)) || [];
+//         savedItems = savedItems.map(item => item.name === oldName ? { name: newName, quantity: newQuantity, bought } : item);
+//         localStorage.setItem(listName, JSON.stringify(savedItems));
+//     }
+//     function removeItem(name) {
+//         let savedItems = JSON.parse(localStorage.getItem(listName)) || [];
+//         savedItems = savedItems.filter(item => item.name !== name);
+//         localStorage.setItem(listName, JSON.stringify(savedItems));
+//     }
+//     function clearItems() {
+//         localStorage.removeItem(listName);
+//     }
+// });
 
-}
-redirectButton.addEventListener('click', redirectToPage)
 
 
-//
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
-    const resultsList = document.getElementById('resultsList');
-  
-    function getResults(input) {
-        const items = ['List 2', 'Clothes', 'Groceries', 'Toiletries', 'List 1']; 
-        const filteredItems = items.filter(item => item.toLowerCase().includes(input.toLowerCase()));
-        resultsList.innerHTML = ''; 
-        filteredItems.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-            resultsList.appendChild(listItem);
+document.addEventListener('DOMContentLoaded', () => {
+    const addListForm = document.getElementById('addListForm');
+    const listNameInput = document.getElementById('listName');
+    const categoryNameInput = document.getElementById('categoryName');
+    const lists = document.getElementById('lists');
+    const clearAllListsButton = document.getElementById('clearAllLists');
+    loadLists();
+    addListForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const listName = listNameInput.value;
+        const categoryName = categoryNameInput.value;
+        addList(listName, categoryName);
+        saveList(listName, categoryName);
+        listNameInput.value = '';
+        categoryNameInput.value = '';
+    });
+    clearAllListsButton.addEventListener('click', () => {
+        clearAllLists();
+        lists.innerHTML = '';
+    });
+    function loadLists() {
+        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+        savedLists.forEach(list => addList(list.name, list.category));
+    }
+    function addList(listName, categoryName) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <a href="list.html?list=${encodeURIComponent(listName)}&category=${encodeURIComponent(categoryName)}">
+                ${listName} is in  ${categoryName}
+            </a>
+            <button class="deleteList">Delete</button>
+        `;
+        lists.appendChild(listItem);
+        listItem.querySelector('.deleteList').addEventListener('click', () => {
+            deleteList(listName);
+            lists.removeChild(listItem);
         });
     }
-   
-    searchInput.addEventListener('keyup', function(e) {
-        getResults(this.value);
-    });
-    
-    searchButton.addEventListener('click', function() {
-        getResults(search-input.value);
-    });
-    display(result)
+    function saveList(listName, categoryName) {
+        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+        savedLists.push({ name: listName, category: categoryName });
+        localStorage.setItem('lists', JSON.stringify(savedLists));
+    }
+    function deleteList(listName) {
+        let savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+        savedLists = savedLists.filter(list => list.name !== listName);
+        localStorage.setItem('lists', JSON.stringify(savedLists));
+        localStorage.removeItem(listName); // Remove items associated with the list
+    }
+    function clearAllLists() {
+        localStorage.removeItem('lists');
+        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+        savedLists.forEach(list => localStorage.removeItem(list.name));
+    }
 });
-function display(result){
-    const content = result.map((lisr)=>{
-        return "<li onclick = selectInput(this)>" + list + "</li>";
-    });
-
-    resultBox.innerHTML = "<li>" + content.join('') + "</li>";
-}
-function selectInput(list){
-    inputBox.value = list.innerHTML
-}
 
 
 
-// list script
-function addItem(){
-    let name = document.item_form.item_name.value;
-    let quantity = document.item_form.item_quantity.value;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = name;
-    td2.innerHTML = quantity;
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn"  id="edit_btn" onclick="editItem(this);">'
-    document.getElementById("item_table").appendChild(tr)
-    
-}
-function deleteItem(item){
-    let s = item.parentNode.parentNode;
-    s.parentNode.removeChild(s)
-}
-function editItem(item){
-    let name = document.item_form.item_name.value;
-    let quantity = document.item_form.item_quantity.value;
-    let s = item.parentNode.parentNode;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = '<input type="text" placeholder="Enter Item Name" class="item_input" name="edit_name">';
-    td2.innerHTML = '<input type="number" placeholder="Enter Item Quantity" class="item_input" name="edit_quantity">';
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="addeditItem(this);">'
-    document.getElementById("item_table").replaceChild(tr, s)
-}
-function addeditItem(item){
-    let name = document.item_form.edit_name.value;
-    let quantity = document.item_form.edit_quantity.value;
-    let s = item.parentNode.parentNode;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = name;
-    td2.innerHTML = quantity;
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editItem(this);">'
-    document.getElementById("item_table").replaceChild(tr, s)
-}
 
-// home styling
-function addList(){
-    let name = document.list_form.list_name.value;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = name;
-    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn"  id="edit_btn" onclick="editList(this);">'
-    document.getElementById("item_table").appendChild(tr)
-}
 
-function editList(list){
-    let name = document.list_form.list_name.value;
-    let l = list.parentNode.parentNode;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = '<input type="text" placeholder="Enter New List Name" class="item_input" name="edit_name">';
-    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editedList(this);">'
-    document.getElementById("item_table").replaceChild(tr, l)
-}
 
-function editedList(list){
-    let name = document.list_form.edit_name.value;
-    let l = list.parentNode.parentNode;
-    let tr = document.createElement('tr');
-    let td1 = tr.appendChild(document.createElement('td'));
-    let td2 = tr.appendChild(document.createElement('td'));
-    let td3 = tr.appendChild(document.createElement('td'));
-    let td4 = tr.appendChild(document.createElement('td'));
-    td1.innerHTML = name;
-    td2.innerHTML ='<a href="list.html"><input type="button" value="view" name="delete_btn" id="delete_btn" ;"></a>'
-    td3.innerHTML ='<input type="button" value="delete" name="delete_btn" id="delete_btn" onclick="deleteItem(this);">'
-    td4.innerHTML ='<input type="button" value="edit" name="edit_btn" id="edit_btn" onclick="editList(this);">'
-    document.getElementById("item_table").replaceChild(tr, l)
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
