@@ -6,12 +6,17 @@ body {
     padding: 20px;
 }
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow:  5px 5px 10px orange
+}
+#added_list{
+    text-decoration: none;
+    font-size: 20px;
+    color: orange;
 }
 h1 {
     text-align: center;
@@ -23,15 +28,38 @@ form {
 }
 form input {
     flex: 1;
+    color: orange;
     margin-right: 10px;
     padding: 10px;
+    font-size: 20px;
     box-sizing: border-box;
-    height: 40px;
+    height: 50px;
 }
 form button {
     padding: 10px 20px;
-    height: 40px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
 }
+#clearAllLists{
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+#clearList{
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+
 #lists {
     list-style: none;
     padding: 0;
@@ -43,8 +71,55 @@ form button {
 }
 .deleteList {
     margin-left: auto;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
 }
+.markBought{
+    margin-left: auto;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+#list_buttons{
+margin: 20px auto;
 
+}
+.removeItem{
+    margin-left: auto;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+.removeItem:hover{
+    color: red;
+    background-color: white;
+}
+.item-name{
+    color: orange;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 50px;
+}
+.item-quantity{
+    color: orange;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 50px;
+}
 .appname{
     color: orange;
     font-size: xx-large;
