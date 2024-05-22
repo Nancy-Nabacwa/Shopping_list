@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemQuantityInput = document.getElementById('itemQuantity');
     const shoppingList = document.getElementById('shoppingList');
     const clearListButton = document.getElementById('clearList');
-    listTitle.textContent = `${listName} - ${categoryName}`;
+    listTitle.textContent = `${listName} is in ${categoryName}`;
     loadItems();
     addItemForm.addEventListener('submit', (e) => {
         e.preventDefault();
