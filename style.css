@@ -5,6 +5,10 @@ body {
     margin: 0;
     padding: 20px;
 }
+.homepageContainer{
+    position: fixed;
+}
+
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -12,6 +16,9 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow:  5px 5px 10px orange
+}
+.shoppinglisttext{
+    color: orange;
 }
 #added_list{
     text-decoration: none;
@@ -77,6 +84,9 @@ form button {
     background-color: orange;
     border: none;
     color: white;
+}
+#listTitle{
+    color: orange;
 }
 .markBought{
     margin-left: auto;
@@ -157,11 +167,6 @@ margin: 20px auto;
     align-items: center;
 }
 
-#logo{
-    width: 83%;
-}
-
-
 #landing_page{
     display: flex;
     align-items: center;
@@ -214,12 +219,11 @@ margin: 20px auto;
 
 
 #logo{
-    width: 43%;
-    height: 140px;
+    width: 50%;
+    height: 150px;
 }
 .logocontent{
     display: flex;
-    gap: 1%;
 }
 .backArrow{
     width: 40px;
