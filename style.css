@@ -132,22 +132,23 @@ margin: 20px auto;
 }
 .appname{
     color: orange;
-    font-size: xx-large;
+    font-size: 45px;
+    margin-left: -100px;
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
 } 
 #restock-container{
-    margin: 80px auto;    
+    margin: 0 auto;    
     flex-wrap: wrap;
     width: 80%;
     padding: 50px;
 }
 #welcome-paragraph{
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
 }
 .welcome_heading{
-    font-size: 50px;
+    font-size: 40px;
     color: orange;
 }
 #welcome-paragraph p{
@@ -162,15 +163,11 @@ margin: 20px auto;
     text-decoration: none;
     color: orange;
 }
-.restocklogo{
-    display: flex;
-    align-items: center;
-}
 
 #landing_page{
     display: flex;
     align-items: center;
-    gap: 30%;
+    gap: 25%;
     margin-top: -5%;
 }
 
@@ -191,7 +188,7 @@ margin: 20px auto;
 
 .shopping_basket{
     width: 250%;
-    margin-left: -90%;
+    margin-left: -150%;
     
 }
 
@@ -200,31 +197,19 @@ margin: 20px auto;
     color:  orange;
 }
 
-
-
-
-
-
-
-.restocklogo img {
-    max-width: 200%;
-    height: auto;
-    gap: 2%; 
-}
-
-
 #landing-page {
     padding: 20px;
+    
 }
-
-
-#logo{
-    width: 50%;
-    height: 150px;
-}
-.logocontent{
+.restocklogo{
     display: flex;
 }
+#logo{
+    width: 20%;
+    height: 200px;
+    margin-left: -40px;
+}
+
 .backArrow{
     width: 40px;
     height: 20px;
@@ -238,5 +223,23 @@ margin: 20px auto;
     gap: 20%;
     margin-left: 70%;
     margin-top: -5%;
+} 
+
+#logo-listpage{
+    width: 30%;
+    height: 200px;
+    margin-left: 40px;
 }
 
+.appname-list-page{
+    color: orange;
+    font-size: 40px;
+    margin-left: -100px;
+    margin-top: 40px;
+    font-weight: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.restocklogo-list-page{
+    display: flex;
+    margin-left: -85px;
+}
