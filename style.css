@@ -217,14 +217,25 @@ margin: 20px auto;
 .forwardArrow{
     width: 40px;
     height: 20px;
-}
-#forwardbackward-arrow{
-    display: flex;
     gap: 20%;
-    margin-left: 70%;
-    margin-top: -5%;
+    margin-top: 50px;
+    margin-left: 670%;
+}
+.backArrow{
+    gap: 20%;
+    margin-top: 50px;
+    margin-left: 370%;
 } 
-
+.backarrow{
+    width: 40px;
+    height: 20px;
+    gap: 20%;
+    margin-top: 50px;
+    margin-left: 790%;
+} 
+#restocklogo-list-pages{
+    display: flex;
+}
 #logo-listpage{
     width: 30%;
     height: 200px;
@@ -234,7 +245,7 @@ margin: 20px auto;
 .appname-list-page{
     color: orange;
     font-size: 40px;
-    margin-left: -100px;
+    margin-left: -140px;
     margin-top: 40px;
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
@@ -242,4 +253,5 @@ margin: 20px auto;
 .restocklogo-list-page{
     display: flex;
     margin-left: -85px;
+    gap: 5%;
 }
