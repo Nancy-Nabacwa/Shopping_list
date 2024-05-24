@@ -34,12 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
       listItem.style.width = '120%';
       listItem.classList.toggle('bought', bought);
       listItem.innerHTML = `
+      <div id= "itemInputDetails">
         <input type="text" value="${toTitleCase(name)}" class="item-name">
         <input type="number" value="${quantity}" class="item-quantity">
-        <div id="list_buttons">
-          <button class="markBought">Bought</button>
-          <button class="removeItem">Remove</button>
-        </div>
+      </div>
+      <div id="list_buttons">
+        <button class="markBought">Bought</button>
+        <button class="removeItem">Remove</button> 
+      </div>
       `;
       const nameInput = listItem.querySelector('.item-name');
       const quantityInput = listItem.querySelector('.item-quantity');
