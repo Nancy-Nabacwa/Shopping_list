@@ -5,49 +5,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearAllListsButton = document.getElementById('clearAllLists');
     loadLists();
     addListForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const listName = listNameInput.value;
-        addList(listName);
-        saveList(listName);
-        listNameInput.value = '';
+      e.preventDefault();
+      const listName = listNameInput.value;
+      addList(listName);
+      saveList(listName);
+      listNameInput.value = '';
     });
     clearAllListsButton.addEventListener('click', () => {
-        clearAllLists();
-        lists.innerHTML = '';
+      clearAllLists();
+      lists.innerHTML = '';
     });
     function loadLists() {
-        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
-        savedLists.forEach(list => addList(list.name));
+      const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+      savedLists.forEach(list => addList(list.name));
     }
     function addList(listName) {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <a href="list.html?list=${encodeURIComponent(listName)}"id="added_list">
-                ${listName} 
-            </a>
-            <button class="deleteList">Delete</button>
-        `;
-        lists.appendChild(listItem);
-        listItem.querySelector('.deleteList').addEventListener('click', () => {
-            deleteList(listName);
-            lists.removeChild(listItem);
-        });
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <a href="list.html?list=${encodeURIComponent(toTitleCase(listName))}" id="added_list">
+          ${toTitleCase(listName)}
+        </a>
+        <button class="deleteList">Delete</button>
+      `;
+      lists.appendChild(listItem);
+      listItem.querySelector('.deleteList').addEventListener('click', () => {
+        deleteList(listName);
+        lists.removeChild(listItem);
+      });
     }
     function saveList(listName) {
-        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
-        savedLists.push({ name: listName});
-        localStorage.setItem('lists', JSON.stringify(savedLists));
+      const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+      savedLists.push({ name: toTitleCase(listName) });
+      localStorage.setItem('lists', JSON.stringify(savedLists));
     }
     function deleteList(listName) {
-        let savedLists = JSON.parse(localStorage.getItem('lists')) || [];
-        savedLists = savedLists.filter(list => list.name !== listName);
-        localStorage.setItem('lists', JSON.stringify(savedLists));
-        localStorage.removeItem(listName); // Remove items associated with the list
+      let savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+      savedLists = savedLists.filter(list => list.name !== listName);
+      localStorage.setItem('lists', JSON.stringify(savedLists));
+      localStorage.removeItem(listName); // Remove items associated with the list
     }
     function clearAllLists() {
-        localStorage.removeItem('lists');
-        const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
-        savedLists.forEach(list => localStorage.removeItem(list.name));
+      localStorage.removeItem('lists');
+      const savedLists = JSON.parse(localStorage.getItem('lists')) || [];
+      savedLists.forEach(list => localStorage.removeItem(list.name));
     }
-});
+    function toTitleCase(str) {
+      return str.replace(
+        /\w\S*/g,
+        (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+      );
+    }
+  });
 
