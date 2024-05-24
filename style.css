@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow:  5px 5px 10px orange
+    box-shadow:  5px 5px 10px rgb(21, 98, 21);
 }
 .shoppinglisttext{
     color: orange;
@@ -23,19 +23,19 @@ body {
 #added_list{
     text-decoration: none;
     font-size: 20px;
-    color: orange;
+    color: black;
 }
 h1 {
     text-align: center;
 }
 form {
     display: flex;
+    padding: 50px;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 form input {
     flex: 1;
-    color: orange;
     margin-right: 10px;
     padding: 10px;
     font-size: 20px;
@@ -46,25 +46,34 @@ form button {
     padding: 10px 20px;
     height: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background: rgb(21, 98, 21);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
     color: white;
+    border: 2px solid white;
+    font-size: 30px;
 }
 #clearAllLists{
     padding: 10px 20px;
     height: 50px;
+    margin-left: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background:  red;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
     color: white;
+    border: 2px solid white;
 }
 #clearList{
     padding: 10px 20px;
     height: 50px;
+    margin-left: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background: red;
     color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
+    border: 2px solid white;
 }
 
 #lists {
@@ -81,9 +90,11 @@ form button {
     padding: 10px 20px;
     height: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background:red;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
     color: white;
+    border: 2px solid white;
 }
 #listTitle{
     color: orange;
@@ -93,26 +104,56 @@ form button {
     padding: 10px 20px;
     height: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background:  rgb(21, 98, 21);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
     color: white;
+    border: 2px solid white;
 }
 #list_buttons{
-margin: 20px auto;
+margin: 0px auto;
 
 }
 .removeItem{
     margin-left: auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
     height: 50px;
     font-size: 20px;
-    background-color: orange;
-    border: none;
+    background:red;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
     color: white;
+    border: 2px solid white;
 }
 .removeItem:hover{
     color: red;
+    cursor: pointer;
     background-color: white;
+}
+.markBought:hover{
+  color: green;
+  cursor: pointer;
+  background-color: white;
+}
+form button:hover {
+  color: green;
+  background-color: white;
+  cursor: pointer;
+}
+#clearAllLists:hover{
+  color: red;
+  cursor: pointer;
+  background-color: white;
+}
+#clearList:hover{
+  color: red;
+  cursor: pointer;
+  background-color: white;
+}
+.deleteList:hover {
+  color: red;
+  cursor: pointer;
+  background-color: white;
 }
 .item-name{
     color: orange;
@@ -131,7 +172,7 @@ margin: 20px auto;
     height: 50px;
 }
 .appname{
-    color: orange;
+    color: rgb(21, 98, 21);
     font-size: 45px;
     margin-left: -100px;
     font-weight: 500px;
@@ -174,12 +215,11 @@ margin: 20px auto;
 #landing-page-button{
     width: 60%;
     padding: 15px 10px;
-    border-radius: 10px;
-    border-radius: none;
-    border-color: transparent;
-    background-color: orange;
-    color: white;
-    font-size: 25px;
+    background: rgb(21, 98, 21);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 30px;
 }
 #landing-page-button a{
     text-decoration: none;
@@ -238,15 +278,15 @@ margin: 20px auto;
 }
 #logo-listpage{
     width: 30%;
-    height: 200px;
+    height: 250px;
     margin-left: 40px;
 }
 
 .appname-list-page{
-    color: orange;
+    color:rgb(21, 98, 21);
     font-size: 40px;
-    margin-left: -140px;
-    margin-top: 40px;
+    margin-left: -240px;
+    margin-top: 50px;
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -255,3 +295,267 @@ margin: 20px auto;
     margin-left: -85px;
     gap: 5%;
 }
+@media (min-width: 281px) and (max-width: 360px) {
+    body {
+      padding: 20px;
+     
+    }
+  
+    .container {
+      max-width: 100%;
+      margin: 10px auto;
+      padding: 5px;
+    
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    form {
+      flex-direction: column;
+    }
+  
+    form input {
+      margin-right: 0;
+      margin-bottom: 5px;
+      height: 30px;
+    }
+  
+    form button {
+      height: 50px;
+    }
+  
+    #lists li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .deleteList,
+    .markBought,
+    .removeItem {
+      margin-left: 0;
+      margin-top: 5px;
+      height: 30px;
+    }
+  
+    .item-name,
+    .item-quantity {
+      height: 30px;
+    }
+  
+    #landing_page {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 0;
+    }
+  
+    #landing-page-button {
+      width: 100%;
+    }
+  
+    .shopping_basket {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    #shopping-list {
+      margin-left: 0;
+    }
+  
+    .restocklogo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #logo {
+      width: 50%;
+      height: auto;
+      margin-left: 0;
+    }
+  
+    .backArrow,
+    .forwardArrow {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  
+    #restocklogo-list-pages {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #logo-listpage {
+      width: 50%;
+      height: auto;
+      margin-left: 0;
+    }
+  
+    .appname-list-page {
+      font-size: 24px;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+@media only screen and (min-width: 200px) and (max-width: 280px) {
+    body {
+      padding: 20px;
+      overflow: hidden;
+    }
+    .restocklogo{
+      flex-direction: column;
+      align-items: center;
+    }
+    #logo{
+        width:100%;
+        margin-left: -180%;
+        margin-top: -55%;
+        height: auto;
+    }
+    .appname{
+        font-size: 20px;
+        margin-top: -60%;
+        margin-left: -50%;
+    }
+    #welcome-paragraph{
+        margin-left: -10%;
+        width: 50px;
+        flex-direction: column;   
+    }
+    .homepageContainer{
+        width:50%;
+        margin-left: 20%;
+    }
+    #welcome-paragraph {
+        width: 200%;
+    }
+    #landing-page-button{
+        width: 150%;
+        margin-left: -30%;
+       
+
+    }
+    #landing_page{
+        margin-left: -50%;
+    }
+    #welcome-paragraph p{
+        font-size: 15px;
+    }
+    .welcome_heading{
+        font-size: 10px;
+    }
+    .shopping_basket{
+        width: 150%;
+        margin-top: 20%;
+        margin-left: -30%;
+    }
+  
+    .container {
+      max-width: 100%;
+      margin:20px auto;
+      padding:10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+   
+  
+    form {
+      flex-direction: column;
+    }
+  
+    form input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      height: 40px;
+    }
+  
+    form button {
+      height: 40px;
+    }
+  
+    #lists li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .deleteList {
+      margin-left: 0;
+      margin-top: 10px;
+      height: 40px;
+    }
+  
+    .markBought {
+      margin-left: -210%;
+      margin-top: 50px;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .removeItem {
+      margin-left: 0;
+      margin-top: 10px;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .item-name{
+      height: 40px;
+      width: 100px;
+      
+    }
+    
+    .item-quantity {
+      height: 40px;
+      width: 50px;
+    }
+  
+    #landing_page {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  
+    
+  
+    
+  
+    #shopping-list {
+      margin-left: 0;
+    }
+  
+    .restocklogo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+    .backArrow,
+    .forwardArrow {
+      margin-top: 100px;
+      margin-left: -300%;
+    }
+
+    .backarrow{
+      margin-top: 100px;
+      margin-left: -300%;
+    }
+  
+    #restocklogo-list-pages {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #logo-listpage {
+      width: 60%;
+      height: auto;
+      margin-left: 30%;
+    }
+  
+    .appname-list-page {
+      font-size: 20px;
+      margin-left:-30%;
+      margin-top: 20px;
+    }
+  }
