@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       listItem.classList.toggle('bought', bought);
       listItem.innerHTML = `
       <div id= "itemInputDetails">
-        <input type="text" value="${toTitleCase(name)}" class="item-name">
+        <input id type="text" value="${toTitleCase(name)}" class="item-name">
         <input type="number" value="${quantity}" class="item-quantity">
       </div>
       <div id="list_buttons">
