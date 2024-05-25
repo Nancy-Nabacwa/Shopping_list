@@ -554,6 +554,7 @@ height: 75px;
     height: 75px;
    }
 }
+
 #list_buttons{
   display: block;
   margin-right: 454px;
@@ -575,3 +576,222 @@ height: 75px;
   width: 285px;
   height: 75px;
   }
+
+
+  @media only screen and (min-width: 391px) and (max-width: 412px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+    }
+ 
+ 
+    .homepageContainer{
+        position: fixed;
+    }
+ 
+ 
+    .restocklogo{
+        display: flex;
+        margin-left: 20%;
+    }
+ 
+ 
+    .appname{
+        color: rgb(21, 98, 21);
+        font-size: 20px;
+        margin-left: -20px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+   
+    #logo-listpage{
+        width: 40%;
+        height: 250px;
+        margin-left: 40px;
+    }
+ 
+ 
+    .restocklogo-list-page{
+        display: flex;
+        margin-left: -60px;
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+    /* Shopping List page */
+ 
+ 
+    .appname-list-page{
+        color:rgb(21, 98, 21);
+        font-size: 35px;
+        margin-left: -28%;
+        margin-top: 8%;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+ 
+ 
+ 
+ 
+    #logo-listpage{
+        width: 55%;
+        height: 150%;
+    }
+ 
+ 
+    .addItemForm{
+        display: column;
+        margin-bottom: 10%;
+    }
+ 
+ 
+    form button {
+        padding: 8px 20px;
+        height: 50px;
+        font-size: 20px;
+        background: rgb(21, 98, 21);
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+        font-size: 22px;
+    }
+ 
+ 
+    #itemName{
+        margin-bottom: 9% ;
+        width: 115%;
+        margin-left: -18%;
+ 
+ 
+    }
+ 
+ 
+    .item-quantity{
+        margin-bottom: 10%;
+        width: 40;
+ 
+ 
+    }
+ 
+ 
+    #itemQuantity{
+        width: 115%;
+        margin-left: -18%;
+    }
+ 
+ 
+    #submit{
+        margin-right: -20%;
+        height: 5;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        height: 50px;
+    }
+ 
+ 
+    .item-name, .item-quantity{
+        width: 80;
+        margin-left: -82%;
+    }
+ 
+ 
+    #shoppingList{
+        display: block;
+        width: 10%;
+    }
+ 
+ 
+    #list_buttons{
+        margin-right: 10%;
+    }
+ 
+ 
+    #itemInputDetails{
+        width: 10%;
+        margin-left: -82%;
+    }
+ 
+ 
+    #list_buttons{
+        margin-left: 20%;
+    }
+ 
+ 
+    .markBought,.removeItem {
+        margin-left: 160%;
+        width: 100%;
+    }
+ 
+ 
+    #clearList{
+        padding: 10px 20px;
+        height: 50px;
+        margin-left: 90px;
+        font-size: 20px;
+        background: red;
+        color: white;
+        border-radius: 8px;
+        border: 2px solid white;
+    }
+ 
+ 
+    /* add_list_html_media_querries */
+ 
+ 
+    #listName{
+        margin-left: -15%;
+        width: 70%;
+        margin-right: -2%;
+ 
+ 
+    }
+ 
+ 
+    #Add_Button{
+        margin-right: -20%;
+    }
+ 
+ 
+    #clearAllLists{
+        margin-left: 85px;
+ 
+ 
+    }
+ 
+ 
+    /* index_html_media_querries */
+ 
+ 
+    .restocklogo{
+        display: flex;
+ 
+ 
+    }
+   
+    #logo{
+        width: 90%;
+        height: 200px;
+        margin-left: -90px;
+    }
+ 
+ 
+    .appname{
+        color: rgb(21, 98, 21);
+        font-size: 40px;
+        margin-right: 50%;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+  }
+ 
+ 
+ 
+   
+ 
+ 
+ 
+
