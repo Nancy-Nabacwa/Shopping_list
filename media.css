@@ -229,3 +229,349 @@
     margin-left: 10%;
   }
   }
+
+  @media only screen and (min-width: 541px) and (max-width: 590px){
+    #logo{
+        width: 55%;
+        height: 150px;
+        margin-left: -40px;
+    }
+    .appname{
+        color: rgb(21, 98, 21);
+        font-size: 43px;
+        margin-left: -50px;
+        margin-top: 23px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+   #add-button{
+    width: 205px;
+    height: 55px;
+   }
+   #listName{
+    width: 226px;
+    height: 55px;
+   }
+    .welcome_heading{
+        font-size: 18px;
+        margin-right: 60px;
+        color: orange;
+    }
+    #landing-page-button{
+        width: 80%;
+        padding: 15px 10px;
+        background: rgb(21, 98, 21);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        border-radius: 8px;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+    #welcome-paragraph p{
+        font-size: 15px;
+        width: 233px;
+        line-height: 1.8;
+    }
+    .shopping_basket{
+        width: 300%;
+        margin-right: -150%;
+        height: 300px;
+    }
+    #landing_page{
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+    }
+    #logo-listpage{
+        width: 40%;
+        height: 150px;
+        margin-left:70px;
+        margin-top: 23px;
+    }
+    .appname-list-page{
+        color:rgb(21, 98, 21);
+        font-size: 35px;
+        margin-left: -70px;
+        margin-top: 50px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container {
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:  5px 5px 10px rgb(21, 98, 21);
+    }
+#itemName{
+    width: 253px;
+    font-size: large;
+  }
+  #submit{
+    width: 353px;
+    height: 75px;
+  }
+#itemQuantity{
+  width: 253px;
+  font-size: large;
+}
+#clearList{
+  width: 233px;
+  font-size: large;
+}
+}
+#list_buttons{
+display: block;
+margin-right: 454px;
+margin-left: -8px;
+}
+.markBought{
+width: 235px;
+height: 75px;
+}
+.removeItem{
+width: 235px;
+height: 75px;
+}
+.item-name{
+width: 285px;
+height: 75px;
+}
+.item-quantity{
+width: 285px;
+height: 75px;
+}
+  @media only screen and (min-width: 591px) and (max-width: 690px){
+    #logo{
+        width: 55%;
+        height: 180px;
+        margin-left: -40px;}
+        body{
+            overflow: scroll;
+        }
+    .appname{
+        color: rgb(21, 98, 21);
+        font-size: 45px;
+        margin-left: 88px;
+        margin-top: 33px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .welcome_heading{
+        font-size: 18px;
+        margin-right: 60px;
+        color: orange;
+    }
+    #landing-page-button{
+        width: 120%;
+        padding: 15px 10px;
+        background: rgb(21, 98, 21);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        border-radius: 8px;
+        border: 2px solid white;
+        font-size: 30px;
+    }
+    #welcome-paragraph p{
+        font-size: 20px;
+        width: 233px;
+        line-height: 1.8;
+    }
+    .shopping_basket{
+        width: 310%;
+        margin-right: -150%;
+        height: 303px;
+    }
+    .appname-list-page{
+        color:rgb(21, 98, 21);
+        font-size: 35px;
+        margin-left: -130px;
+        margin-top: 50px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #logo-listpage{
+        width: 50%;
+        height: 250px;
+        margin-left: 40px;
+    }
+    .shoppinglisttext{
+        color: orange;
+        font-size: 45px;
+    }
+    #listName{
+        width: 263px;
+        font-size: 30px;
+    }
+    #clearAllLists{
+        padding: 10px 20px;
+        height: 50px;
+        margin-left: 30px;
+        font-size: 25px;
+        background:  red;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow:  5px 5px 10px rgb(21, 98, 21);
+    }
+    #itemName{
+        width: 123px;
+        font-size: large;
+      }
+    #itemQuantity{
+      width: 123px;
+      font-size: large;
+    }
+  }
+  #list_buttons{
+    display: block;
+    margin-right: 454px;
+    margin-left: -8px;
+}
+.markBought{
+    width: 235px;
+    height: 75px;
+}
+.removeItem{
+    width: 235px;
+    height: 75px;
+}
+.item-name{
+    width: 285px;
+    height: 75px;
+}
+.item-quantity{
+    width: 285px;
+    height: 75px;
+}
+  @media only screen and (min-width: 691px) and (max-width: 750px){
+    #logo{
+        width: 85%;
+        height: 270px;
+        margin-left: -40px;
+    }
+    #itemInputDetail{
+        display: block;
+        gap: 3%;
+    }
+    #list_buttons{
+        display: block;
+        margin-right: 454px;
+        margin-left: -8px;
+    }
+    .markBought{
+        width: 235px;
+        height: 75px;
+    }
+    .removeItem{
+        width: 235px;
+        height: 75px;
+    }
+    .item-name{
+        width: 285px;
+        height: 75px;
+    }
+    .item-quantity{
+        width: 285px;
+        height: 75px;
+    }
+    .appname{
+        color: rgb(21, 98, 21);
+        font-size: 24px;
+        margin-left: -158px;
+        margin-top: 76px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .welcome_heading{
+        font-size: 28px;
+        margin-right: 60px;
+        color: orange;
+    }
+    #landing-page-button{
+        width: 70%;
+        background: rgb(21, 98, 21);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        border-radius: 8px;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+    #welcome-paragraph p{
+        font-size: 20px;
+        height: 234px;
+        line-height: 1.8;
+    }
+    .shopping_basket{
+        width: 500%;
+        margin-left: -370%;
+        height: 203px;
+    }
+    #landing_page{
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+    }
+    #logo-listpage{
+        width: 40%;
+        height: 150px;
+        margin-left:70px;
+        margin-top: 23px;
+    }
+    .appname-list-page{
+        color:rgb(21, 98, 21);
+        font-size: 35px;
+        margin-left: -70px;
+        margin-top: 50px;
+        font-weight: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:  5px 5px 10px rgb(21, 98, 21);
+    }
+    #itemName{
+      width: 293px;
+      height: 65px;
+      font-size: large;
+    }
+  #itemQuantity{
+    height: 65px;
+    width: 293px;
+    font-size: large;
+  }
+  #submits{
+    width: 275px;
+    height: 75px;
+   }
+}
+#list_buttons{
+  display: block;
+  margin-right: 454px;
+  margin-left: -23px;
+}
+.markBought{
+  width: 185px;
+  height: 75px;
+}
+.removeItem{
+  width: 185px;
+  height: 75px;
+}
+.item-name{
+  width: 285px;
+  height: 75px;
+}
+.item-quantity{
+  width: 285px;
+  height: 75px;
+  }
