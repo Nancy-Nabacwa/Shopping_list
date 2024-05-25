@@ -91,3 +91,476 @@
     }
 
 }
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+    /* body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+        margin: 0;
+        padding: 20px;
+    } */
+    .homepageContainer{
+        position: absolute;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:  5px 5px 10px rgb(21, 98, 21);
+    }
+
+    #added_list{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    form {
+        display: flex;
+        padding: 50px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    form input {
+        flex: 1;
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+    form button {
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background: rgb(21, 98, 21);
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+        font-size: 22px;
+    }
+    #clearAllLists{
+        padding: 10px 20px;
+        height: 50px;
+        margin-left: 50px;
+        font-size: 20px;
+        background:  red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #clearList{
+        padding: 10px;
+        box-sizing: border-box;
+        height: 70px;
+        font-size: 30px;
+        width: 200px;
+    }
+    #submit{
+        padding: 10px;
+        height: 75px;
+        font-size: 30px;
+        width: 150px;
+
+    }
+    
+    #lists {
+        list-style: none;
+        padding: 0;
+    }
+    #lists li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .deleteList {
+        margin-left: auto;
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background:red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #listTitle{
+        color: orange;
+    }
+    .markBought{
+        margin-left: auto;
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background:  rgb(21, 98, 21);
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #list_buttons{
+    margin: 0px auto;
+    
+    }
+    .removeItem{
+        margin-left: auto;
+        padding: 10px 10px;
+        height: 50px;
+        font-size: 20px;
+        background:red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #itemInputForm{
+        display: flex;
+        width: 10%;
+    }
+    #itemName{
+        padding: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        height: 70px;
+        font-size: 30px;
+        width: 200px;
+    }
+    #itemQuantity{
+        padding: 10px;
+        font-size: 20px;
+        height: 70px;
+        width: 200px;
+        font-size: 30px;
+    }
+    .appname{
+        font-size: 45px;
+        margin-left: -40px;
+        font-weight: 400px;
+    } 
+    #restock-container{
+        margin: 0 auto;    
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 50px;
+    }
+    #welcome-paragraph{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .welcome_heading{
+        font-size: 25px;
+        font-weight: 1000;
+    }
+    #welcome-paragraph p{
+        font-size: 25px;
+        line-height: 1.8;
+        
+    }
+    #landing_page{
+        display: flex;
+        align-items: center;
+        gap: 25%;
+        margin-top: -5%;
+    }
+    
+    #landing-page-button{
+        width: 70%;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    .shopping_basket{
+        width: 250%;
+        height: 200%;
+        margin-left: -120%;
+        
+    }
+    
+    #shopping-list{
+        margin-left:574px;
+        color:  orange;
+    }
+    
+    #landing-page {
+        padding: 20px;
+        
+    }
+    #logo{
+        width: 50%;
+        height: 250px;
+       
+    }
+    
+    .forwardArrow{
+        width: 40px;
+        height: 20px;
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 200%;
+    }
+    .backArrow{
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 150%;
+    } 
+    .backarrow{
+        width: 40px;
+        height: 20px;
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 790%;
+    } 
+    #logo-listpage{
+        width: 30%;
+        height: 200px;
+        margin-left: 40px;
+    }
+    
+    .appname-list-page{
+            font-size: 45px;
+            margin-left: -40px;
+            font-weight: 400px;
+    }
+    .restocklogo-list-page{
+        display: flex;
+        margin-left: -85px;
+        gap: 5%;
+    }
+
+}
+@media only screen and (min-width: 850px) and (max-width: 912px) {
+    .homepageContainer{
+        position: absolute;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:  5px 5px 10px rgb(21, 98, 21);
+    }
+
+    #added_list{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    form {
+        display: flex;
+        padding: 50px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    form input {
+        flex: 1;
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+    form button {
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background: rgb(21, 98, 21);
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+        font-size: 22px;
+    }
+    #clearAllLists{
+        padding: 10px 20px;
+        height: 50px;
+        margin-left: 50px;
+        font-size: 20px;
+        background:  red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #clearList{
+        padding: 10px;
+        box-sizing: border-box;
+        height: 70px;
+        font-size: 30px;
+        width: 200px;
+    }
+    #submit{
+        padding: 10px;
+        height: 75px;
+        font-size: 30px;
+        width: 150px;
+
+    }
+    
+    #lists {
+        list-style: none;
+        padding: 0;
+    }
+    #lists li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .deleteList {
+        margin-left: auto;
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background:red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #listTitle{
+        color: orange;
+    }
+    .markBought{
+        margin-left: auto;
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 20px;
+        background:  rgb(21, 98, 21);
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    #list_buttons{
+    margin: 0px auto;
+    
+    }
+    .removeItem{
+        margin-left: auto;
+        padding: 10px 10px;
+        height: 50px;
+        font-size: 20px;
+        background:red;
+        border-radius: 8px;
+        color: white;
+        border: 2px solid white;
+    }
+    .removeItem:hover{
+        color: red;
+        cursor: pointer;
+        background-color: white;
+    }
+    .markBought:hover{
+      color: green;
+      cursor: pointer;
+      background-color: white;
+    }
+    #itemInputForm{
+        display: flex;
+        width: 10%;
+    }
+    #itemName{
+        padding: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        height: 70px;
+        font-size: 30px;
+        width: 200px;
+    }
+    #itemQuantity{
+        padding: 10px;
+        font-size: 20px;
+        height: 70px;
+        width: 200px;
+        font-size: 30px;
+    }
+    .appname{
+        font-size: 45px;
+        margin-left: -20px;
+        font-weight: 400px;
+    } 
+    #restock-container{
+        margin: 0 auto;    
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 50px;
+    }
+    #welcome-paragraph{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .welcome_heading{
+        font-size: 25px;
+        font-weight: 1000;
+        color: orange;
+    }
+    #welcome-paragraph p{
+        font-size: 25px;
+        line-height: 1.8;
+        
+    }
+    #landing_page{
+        display: flex;
+        align-items: center;
+        gap: 25%;
+        margin-top: -5%;
+    }
+    
+    #landing-page-button{
+        width: 70%;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    .shopping_basket{
+        width: 250%;
+        height: 200%;
+        margin-left: -120%;
+        
+    }
+    
+    #shopping-list{
+        margin-left:574px;
+        color:  orange;
+    }
+    
+    #landing-page {
+        padding: 20px;
+        
+    }
+    #logo{
+        width: 50%;
+        height: 250px;
+       
+    }
+    
+    .forwardArrow{
+        width: 40px;
+        height: 20px;
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 200%;
+    }
+    .backArrow{
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 150%;
+    } 
+    .backarrow{
+        width: 40px;
+        height: 20px;
+        gap: 20%;
+        margin-top: 50px;
+        margin-left: 790%;
+    } 
+    #logo-listpage{
+        width: 30%;
+        height: 200px;
+        margin-left: 40px;
+    }
+    
+    .appname-list-page{
+            font-size: 45px;
+            margin-left: -40px;
+            font-weight: 400px;
+    }
+    .restocklogo-list-page{
+        display: flex;
+        margin-left: -85px;
+        gap: 5%;
+    }
+
+}
