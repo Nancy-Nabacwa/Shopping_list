@@ -1,293 +1,356 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F7F7F7;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 20px;
 }
-/* .homepageContainer{
-    position: fixed;
-} */
+.homepageContainer{
+  position: fixed;
+}
+
 
 .container {
-    max-width: 1200px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow:  5px 5px 10px rgb(21, 98, 21);
+  max-width: 1200px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow:  5px 5px 10px rgb(21, 98, 21);
 }
 .shoppinglisttext{
-    color: orange;
+  color: orange;
 }
 #added_list{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
 form {
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 form input {
-    flex: 1;
-    margin-right: 10px;
-    padding: 10px;
-    font-size: 20px;
-    box-sizing: border-box;
-    height: 50px;
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  height: 50px;
 }
 form button {
-    padding: 10px 20px;
-    height: 50px;
-    font-size: 20px;
-    background: rgb(21, 98, 21);
-    border-radius: 8px;
-    color: white;
-    border: 2px solid white;
-    font-size: 22px;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 20px;
+  background: rgb(21, 98, 21);
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
+  font-size: 22px;
 }
 #clearAllLists{
-    padding: 10px 20px;
-    height: 50px;
-    margin-left: 50px;
-    font-size: 20px;
-    background:  red;
-    border-radius: 8px;
-    color: white;
-    border: 2px solid white;
+  padding: 10px 20px;
+  height: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+  background:  red;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
 }
 #clearList{
-    padding: 10px 20px;
-    height: 50px;
-    margin-left: 50px;
-    font-size: 20px;
-    background: red;
-    color: white;
-    border-radius: 8px;
-    border: 2px solid white;
+  padding: 10px 20px;
+  height: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid white;
 }
 
+
 #lists {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 #lists li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .deleteList {
-    margin-left: auto;
-    padding: 10px 20px;
-    height: 50px;
-    font-size: 20px;
-    background:red;
-    border-radius: 8px;
-    color: white;
-    border: 2px solid white;
+  margin-left: auto;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 20px;
+  background:red;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
 }
 #listTitle{
-    color: orange;
+  color: orange;
 }
 .markBought{
-    margin-left: auto;
-    padding: 10px 20px;
-    height: 50px;
-    font-size: 20px;
-    background:  rgb(21, 98, 21);
-    border-radius: 8px;
-    color: white;
-    border: 2px solid white;
+  margin-left: auto;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 20px;
+  background:  rgb(21, 98, 21);
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
 }
 #list_buttons{
 margin: 0px auto;
 
+
 }
 .removeItem{
-    margin-left: auto;
-    padding: 10px 10px;
-    height: 50px;
-    font-size: 20px;
-    background:red;
-    border-radius: 8px;
-    color: white;
-    border: 2px solid white;
+  margin-left: auto;
+  padding: 10px 10px;
+  height: 50px;
+  font-size: 20px;
+  background:red;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
 }
-.removeItem:hover{
-    color: red;
-    cursor: pointer;
-    background-color: white;
-}
-.markBought:hover{
-  color: green;
-  cursor: pointer;
-  background-color: white;
-}
-form button:hover {
-  color: green;
-  background-color: white;
-  cursor: pointer;
-}
+
+
+
+
 #clearAllLists:hover{
-  color: red;
-  cursor: pointer;
-  background-color: white;
+color: red;
+cursor: pointer;
+background-color: rgb(44, 37, 37);
 }
-#clearList:hover{
-  color: red;
-  cursor: pointer;
-  background-color: white;
-}
+
+
 .deleteList:hover {
-  color: red;
-  cursor: pointer;
-  background-color: white;
+color: red;
+cursor: pointer;
+background-color: white;
 }
 .item-name{
-    color: orange;
-    margin-right: 10px;
-    padding: 10px;
-    font-size: 20px;
-    box-sizing: border-box;
-    height: 50px;
+  color: orange;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  height: 50px;
 }
 .item-quantity{
-    color: orange;
-    margin-right: 10px;
-    padding: 10px;
-    font-size: 20px;
-    box-sizing: border-box;
-    height: 50px;
+  color: orange;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  height: 50px;
 }
 .appname{
-    color: rgb(21, 98, 21);
-    font-size: 45px;
-    margin-left: -100px;
-    font-weight: 500px;
-    font-family: 'Times New Roman', Times, serif;
-} 
+  color: rgb(21, 98, 21);
+  font-size: 45px;
+  margin-left: -100px;
+  font-weight: 500px;
+  font-family: 'Times New Roman', Times, serif;
+}
 #restock-container{
-    margin: 0 auto;    
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 50px;
+  margin: 0 auto;   
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 50px;
 }
 #welcome-paragraph{
-    flex-wrap: wrap;
-    width: 90%;
+  flex-wrap: wrap;
+  width: 90%;
 }
 .welcome_heading{
-    font-size: 40px;
-    color: orange;
+  font-size: 40px;
+  color: orange;
 }
 #welcome-paragraph p{
-    font-size: 25px;
-    line-height: 1.8;
-    
+  font-size: 25px;
+  line-height: 1.8;
+ 
 }
 #already-paragraph{
-    font-size: 25px;
+  font-size: 25px;
 }
 #already-paragraph a{
-    text-decoration: none;
-    color: orange;
+  text-decoration: none;
+  color: orange;
 }
+
 
 #landing_page{
-    display: flex;
-    align-items: center;
-    gap: 25%;
-    margin-top: -5%;
+  display: flex;
+  align-items: center;
+  gap: 25%;
+  margin-top: -5%;
 }
+
 
 #landing-page-button{
-    width: 60%;
-    padding: 15px 10px;
-    background: rgb(21, 98, 21);
+  width: 60%;
+  padding: 15px 10px;
+  background: rgb(21, 98, 21);
 
-    border-radius: 8px;
-    border: 2px solid white;
-    font-size: 30px;
+
+  border-radius: 8px;
+  border: 2px solid white;
+  font-size: 30px;
 }
 #landing-page-button a{
-    text-decoration: none;
-    color: white;
-} 
+  text-decoration: none;
+  color: white;
+}
+
 
 .shopping_basket{
-    width: 250%;
-    margin-left: -150%;
-    
+  width: 250%;
+  margin-left: -150%;
+ 
 }
+
 
 #shopping-list{
-    margin-left:574px;
-    color:  orange;
+  margin-left:574px;
+  color:  orange;
 }
+
 
 #landing-page {
-    padding: 20px;
-    
+  padding: 20px;
+ 
 }
 .restocklogo{
-    display: flex;
+  display: flex;
 }
 #logo{
-    width: 20%;
-    height: 200px;
-    margin-left: -40px;
+  width: 20%;
+  height: 200px;
+  margin-left: -40px;
 }
 
-.backArrow{
-    width: 40px;
-    height: 20px;
-}
-.forwardArrow{
-    width: 40px;
-    height: 20px;
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 670%;
-}
-.backArrow{
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 370%;
-} 
-.backarrow{
-    width: 40px;
-    height: 20px;
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 790%;
-} 
+
 #restocklogo-list-pages{
-    display: flex;
+  display: flex;
 }
 #logo-listpage{
-    width: 30%;
-    height: 250px;
-    margin-left: 40px;
+  width: 30%;
+  height: 250px;
+  margin-left: 40px;
 }
 
+
 .appname-list-page{
-    color:rgb(21, 98, 21);
-    font-size: 40px;
-    margin-left: -240px;
-    margin-top: 50px;
-    font-weight: 500px;
-    font-family: 'Times New Roman', Times, serif;
+  color:rgb(21, 98, 21);
+  font-size: 40px;
+  margin-left: -240px;
+  margin-top: 50px;
+  font-weight: 500px;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+
 .restocklogo-list-page{
-    display: flex;
-    margin-left: -85px;
-    gap: 5%;
+  display: flex;
+  margin-left: -85px;
+  gap: 5%;
 }
+
+
+@media (min-width: 281px) and (max-width: 360px) {
+  body {
+    padding: 20px;
+  
+  }
+   .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+ 
+  }
+   h1 {
+    font-size: 20px;
+  }
+   form {
+    flex-direction: column;
+  }
+   form input {
+    margin-right: 0;
+    margin-bottom: 5px;
+    height: 30px;
+  }
+   form button {
+    height: 50px;
+  }
+   #lists li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+   .deleteList,
+  .markBought,
+  .removeItem {
+    margin-left: 0;
+    margin-top: 5px;
+    height: 30px;
+  }
+   .item-name,
+  .item-quantity {
+    height: 30px;
+  }
+   #landing_page {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+  }
+   #landing-page-button {
+    width: 100%;
+  }
+   .shopping_basket {
+    width: 100%;
+    margin-left: 0;
+  }
+   #shopping-list {
+    margin-left: 0;
+  }
+   .restocklogo {
+    flex-direction: column;
+    align-items: center;
+  }
+   #logo {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+   .backArrow,
+  .forwardArrow {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+   #restocklogo-list-pages {
+    flex-direction: column;
+    align-items: center;
+  }
+   #logo-listpage {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+   .appname-list-page {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 281px) and (max-width: 360px) {
     body {
       padding: 20px;
