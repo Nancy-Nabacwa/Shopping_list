@@ -118,31 +118,14 @@ margin: 0px auto;
     color: white;
     border: 2px solid white;
 }
-.removeItem:hover{
-    color: red;
-    cursor: pointer;
-    background-color: white;
-}
-.markBought:hover{
-  color: green;
-  cursor: pointer;
-  background-color: white;
-}
-form button:hover {
-  color: green;
-  background-color: white;
-  cursor: pointer;
-}
+
+
 #clearAllLists:hover{
   color: red;
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(44, 37, 37);
 }
-#clearList:hover{
-  color: red;
-  cursor: pointer;
-  background-color: white;
-}
+
 .deleteList:hover {
   color: red;
   cursor: pointer;
@@ -243,29 +226,6 @@ form button:hover {
     margin-left: -40px;
 }
 
-.backArrow{
-    width: 40px;
-    height: 20px;
-}
-.forwardArrow{
-    width: 40px;
-    height: 20px;
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 670%;
-}
-.backArrow{
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 370%;
-} 
-.backarrow{
-    width: 40px;
-    height: 20px;
-    gap: 20%;
-    margin-top: 50px;
-    margin-left: 790%;
-} 
 #restocklogo-list-pages{
     display: flex;
 }
@@ -283,6 +243,7 @@ form button:hover {
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .restocklogo-list-page{
     display: flex;
     margin-left: -85px;
