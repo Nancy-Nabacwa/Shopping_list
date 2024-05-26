@@ -125,13 +125,6 @@ margin: 0px auto;
 
 
 
-#clearAllLists:hover{
-color: red;
-cursor: pointer;
-background-color: rgb(44, 37, 37);
-}
-
-
 .deleteList:hover {
 color: red;
 cursor: pointer;
