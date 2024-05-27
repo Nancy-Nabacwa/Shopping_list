@@ -1,11 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #F7F7F7;
+  background-image: url(/Pics/orange-summer-background_53876-93603.avif);
+  background-size: cover;
   margin: 0;
   padding: 20px;
 }
 .homepageContainer{
   position: fixed;
+  background-color: white;
+  max-width: 1200px;
+  margin: 50px 250px;
+  box-shadow:  5px 5px 10px rgb(21, 98, 21);
 }
 
 
@@ -38,6 +43,7 @@ form input {
   flex: 1;
   margin-right: 10px;
   padding: 10px;
+  width: 400px;
   font-size: 20px;
   box-sizing: border-box;
   height: 50px;
@@ -45,6 +51,7 @@ form input {
 form button {
   padding: 10px 20px;
   height: 50px;
+  width:100px;
   font-size: 20px;
   background: rgb(21, 98, 21);
   border-radius: 8px;
@@ -156,6 +163,7 @@ background-color: white;
 #restock-container{
   margin: 0 auto;   
   flex-wrap: wrap;
+  background-color: white;
   width: 80%;
   padding: 50px;
 }
@@ -259,350 +267,3 @@ background-color: white;
 }
 
 
-@media (min-width: 281px) and (max-width: 360px) {
-  body {
-    padding: 20px;
-  
-  }
-   .container {
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 5px;
- 
-  }
-   h1 {
-    font-size: 20px;
-  }
-   form {
-    flex-direction: column;
-  }
-   form input {
-    margin-right: 0;
-    margin-bottom: 5px;
-    height: 30px;
-  }
-   form button {
-    height: 50px;
-  }
-   #lists li {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-   .deleteList,
-  .markBought,
-  .removeItem {
-    margin-left: 0;
-    margin-top: 5px;
-    height: 30px;
-  }
-   .item-name,
-  .item-quantity {
-    height: 30px;
-  }
-   #landing_page {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 0;
-  }
-   #landing-page-button {
-    width: 100%;
-  }
-   .shopping_basket {
-    width: 100%;
-    margin-left: 0;
-  }
-   #shopping-list {
-    margin-left: 0;
-  }
-   .restocklogo {
-    flex-direction: column;
-    align-items: center;
-  }
-   #logo {
-    width: 50%;
-    height: auto;
-    margin-left: 0;
-  }
-   .backArrow,
-  .forwardArrow {
-    margin-top: 5px;
-    margin-left: 0;
-  }
-   #restocklogo-list-pages {
-    flex-direction: column;
-    align-items: center;
-  }
-   #logo-listpage {
-    width: 50%;
-    height: auto;
-    margin-left: 0;
-  }
-   .appname-list-page {
-    font-size: 24px;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 281px) and (max-width: 360px) {
-    body {
-      padding: 20px;
-     
-    }
-  
-    .container {
-      max-width: 100%;
-      margin: 10px auto;
-      padding: 5px;
-    
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  
-    form {
-      flex-direction: column;
-    }
-  
-    form input {
-      margin-right: 0;
-      margin-bottom: 5px;
-      height: 30px;
-    }
-  
-    form button {
-      height: 50px;
-    }
-  
-    #lists li {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .deleteList,
-    .markBought,
-    .removeItem {
-      margin-left: 0;
-      margin-top: 5px;
-      height: 30px;
-    }
-  
-    .item-name,
-    .item-quantity {
-      height: 30px;
-    }
-  
-    #landing_page {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 0;
-    }
-  
-    #landing-page-button {
-      width: 100%;
-    }
-  
-    .shopping_basket {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    #shopping-list {
-      margin-left: 0;
-    }
-  
-    .restocklogo {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #logo {
-      width: 50%;
-      height: auto;
-      margin-left: 0;
-    }
-  
-    .backArrow,
-    .forwardArrow {
-      margin-top: 5px;
-      margin-left: 0;
-    }
-  
-    #restocklogo-list-pages {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #logo-listpage {
-      width: 50%;
-      height: auto;
-      margin-left: 0;
-    }
-  
-    .appname-list-page {
-      font-size: 24px;
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  }
-
-@media only screen and (min-width: 200px) and (max-width: 280px) {
-    body {
-      padding: 20px;
-      overflow: hidden;
-    }
-    .restocklogo{
-      flex-direction: column;
-      align-items: center;
-    }
-    #logo{
-        width:100%;
-        margin-left: -180%;
-        margin-top: -55%;
-        height: auto;
-    }
-    .appname{
-        font-size: 20px;
-        margin-top: -60%;
-        margin-left: -50%;
-    }
-    #welcome-paragraph{
-        margin-left: -10%;
-        width: 50px;
-        flex-direction: column;   
-    }
-    .homepageContainer{
-        width:50%;
-        margin-left: 20%;
-    }
-    #welcome-paragraph {
-        width: 200%;
-    }
-    #landing-page-button{
-        width: 150%;
-        margin-left: -30%;
-       
-
-    }
-    #landing_page{
-        margin-left: -50%;
-    }
-    #welcome-paragraph p{
-        font-size: 15px;
-    }
-    .welcome_heading{
-        font-size: 10px;
-    }
-    .shopping_basket{
-        width: 150%;
-        margin-top: 20%;
-        margin-left: -30%;
-    }
-  
-    .container {
-      max-width: 100%;
-      margin:20px auto;
-      padding:10px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-   
-  
-    form {
-      flex-direction: column;
-    }
-  
-    form input {
-      margin-right: 0;
-      margin-bottom: 10px;
-      height: 40px;
-    }
-  
-    form button {
-      height: 40px;
-    }
-  
-    #lists li {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .deleteList {
-      margin-left: 0;
-      margin-top: 10px;
-      height: 40px;
-    }
-  
-    .markBought {
-      margin-left: -210%;
-      margin-top: 50px;
-      height: 50px;
-      width: 100px;
-    }
-  
-    .removeItem {
-      margin-left: 0;
-      margin-top: 10px;
-      height: 50px;
-      width: 100px;
-    }
-  
-    .item-name{
-      height: 40px;
-      width: 100px;
-      
-    }
-    
-    .item-quantity {
-      height: 40px;
-      width: 50px;
-    }
-  
-    #landing_page {
-      flex-direction: column;
-      margin-top: 0;
-    }
-
-    #shopping-list {
-      margin-left: 0;
-    }
-  
-    .restocklogo {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .backArrow,
-    .forwardArrow {
-      margin-top: 100px;
-      margin-left: -300%;
-    }
-
-    .backarrow{
-      margin-top: 100px;
-      margin-left: -300%;
-    }
-  
-    #restocklogo-list-pages {
-      flex-direction: column;
-      align-items: center;
-    }
- 
-  
-    #logo-listpage {
-      width: 60%;
-      height: auto;
-      margin-left: 30%;
-    }
-  
-    .appname-list-page {
-      font-size: 20px;
-      margin-left:-30%;
-      margin-top: 20px;
-    }
-  }
-
-  
