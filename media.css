@@ -296,162 +296,7 @@
 
 }
 
-
-@media only screen and (min-width: 550px) and (max-width: 412px) {
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #F7F7F7;
-      padding: 20px;
-  } 
-
-  .homepageContainer{
-      position: fixed;
-  }
-
-  .restocklogo{
-      display: flex;
-      margin-left: 20%;
-  }
-
-  .appname{
-      color: rgb(21, 98, 21);
-      font-size: 45px;
-      margin-left: -30px;
-      font-weight: 500px;
-      font-family: 'Times New Roman', Times, serif;
-  }
-  
-  #logo-listpage{
-      width: 60%;
-      height: 200px;
-      margin-left: 30px;
-  }
-
-  .restocklogo-list-page{
-      display: flex;
-      margin-left: -60px;
-  }
-
-  .markBought{
-    margin-left: 60px;
-    margin-bottom: 10px;
-  }
-
-  .removeItem{
-    margin-left: 60px;
-    width: 63%;
-  }
-
-
-
-  /* Shopping List page */
-
-  .appname-list-page{
-      color:rgb(21, 98, 21);
-      font-size: 38px;
-      margin-left: -30%;
-      margin-top: 40px;
-      font-weight: 500px;
-      font-family: 'Times New Roman', Times, serif;
-  } 
-
-  .addItemForm{
-      display: column;
-  }
-
-  
-
-  #itemName{
-      margin-bottom: 9% ;
-      width: 100%;
-      margin-left: -14%;
-      margin-bottom: 20px;
-
-
-  }
-
-  #itemQuantity{
-    width: 100%;
-    margin-left: -14%;
-  }
-
-  #submit{
-      margin-right: -13%;
-      font-size: 22px;
-      text-align: center;
-  }
-
-  #shoppingList{
-      display: block;
-      width: 10%;
-  }
-
-  #clearList{
-    margin-left: 7%;
-  }
-
-  .item-name{
-    width: 173px;
-    margin-left: -150%;
-    margin-bottom: 20px;
-
-  }
-
-  .item-quantity{
-    width: 173px;
-    margin-left: -150%;
-  }
-
-  #itemInputDetails{
-      width: 30%;
-      margin-left: -10%;
-  }
-
-  #list_buttons{
-      margin-left: 270%;
-  }
-
-  #listName{
-    width: 60%;
-    margin-left: -4%;
-  }
-
-  .shoppinglisttext{
-    margin-bottom: 80px;
-    width: 123px;
-    font-size: large;
-  }
-
-
-    #itemQuantity{
-      width: 123px;
-      font-size: large;
-    }
-  #list_buttons{
-    display: block;
-    margin-right: 454px;
-    margin-left: -8px;
-}
-.markBought{
-    width: 235px;
-    height: 75px;
-}
-.removeItem{
-    width: 235px;
-    height: 75px;
-}
-.item-name{
-    width: 285px;
-    height: 75px;
-}
-.item-quantity{
-    width: 285px;
-    height: 75px;
-}
-}
-
-
-  @media only screen and (min-width: 691px) and (max-width: 750px){
+@media only screen and (min-width: 691px) and (max-width: 750px){
     #logo{
         width: 85%;
         height: 270px;
@@ -668,7 +513,6 @@
  
     }
  
- 
     #itemQuantity{
         width: 115%;
         margin-left: -18%;
@@ -684,23 +528,19 @@
         height: 50px;
     }
  
- 
     .item-name, .item-quantity{
         width: 80;
         margin-left: -82%;
     }
- 
  
     #shoppingList{
         display: block;
         width: 10%;
     }
  
- 
     #list_buttons{
         margin-right: 10%;
     }
- 
  
     #itemInputDetails{
         width: 10%;
@@ -747,10 +587,8 @@
  
     #clearAllLists{
         margin-left: 85px;
- 
- 
     }
-  */
+ 
 
  
      .restocklogo{
@@ -775,4 +613,317 @@
     }
   } 
  
+  @media (min-width: 281px) and (max-width: 360px) {
+      .restocklogo{
+        flex-direction: column;
+        align-items: center;
+      }
+      #logo{
+          width:100%;
+          margin-top: -20%;
+          margin-left: 20%;
+          height: auto;
+      }
+      #clearAllLists{
+          margin-left: 15%;
+          margin-top: -30%;
+      }
+      .appname{
+          font-size: 20px;
+          margin-top:-35%;
+          margin-left: -10%;
+      }
+      #welcome-paragraph{
+          margin-left: -10%;
+          flex-direction: column;   
+      }
+      #welcome-paragraph {
+          width: 110%;
+      }
+      #landing-page-button{
+          width: 80%;
+          height: 50px;
+          font-size: 20px;
+          margin-left: 5%;
+         
+  
+      }
+      .homepageContainer{
+          margin-left: -5%;
+          width: 100%;
+      }
+      #landing_page{
+          margin-left: -10px;
+      }
+      #welcome-paragraph p{
+          font-size: 15px;
+      }
+      .welcome_heading{
+          font-size: 22px;
+      }
+      .shopping_basket{
+          width: 100%;
+          margin-left: -10%;
+      }
+    
+      .container {
+        max-width: 150%;
+        margin:20px auto;
+        padding:10px;
+      }
+    
+      h1 {
+        font-size: 24px;
+      }
+     
+    
+      form {
+        flex-direction: column;
+      }
+    
+      form input {
+        margin-left: -50px;
+        margin-bottom: 10px;
+        height: 40px;
+        width: 300px;
+      }
+    
+      form button {
+        height: 50px;
+        width: 200px;
+        margin-left: -10px;
+      }
+    
+      #lists li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+     
+    
+      .deleteList {
+        margin-left: 20;
+        margin-top: -35px;
+        height: 40px;
+      }
+    
+      .markBought {
+        margin-left: -210%;
+        margin-top: 100px;
+        height: 50px;
+        width: 120px;
+      }
+    
+      .removeItem {
+        margin-left:10px;
+        margin-top: 10px;
+        height: 50px;
+        width: 120px;
+      }
+    
+      .item-name{
+        height: 40px;
+        width: 280px;
+        margin-left: -40px;
+        margin-top: 10px;
+        
+      }
+      
+      .item-quantity {
+        height: 40px;
+        width: 280px;
+        margin-left: -40px;
+        margin-top: 10px;
+      }
+    
+      #landing_page {
+        flex-direction: column;
+        margin-top: 0;
+      }
+  
+    
+      .restocklogo {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+    
+      #restocklogo-list-pages {
+        flex-direction: column;
+        align-items: center;
+      }
+   
+    
+      #logo-listpage {
+        width: 60%;
+        height: auto;
+        margin-left: 40%;
+      }
+    
+      .appname-list-page {
+        font-size: 20px;
+        margin-left:-58%;
+        margin-top: 100px;
+      }
+      #clearList{
+        width: 200px;
+        margin-left: 40px;
+      }
+     
+  }
 
+@media only screen and (min-width: 200px) and (max-width: 280px) {
+    body {
+      padding: 20px;
+     
+    }
+    .restocklogo{
+      flex-direction: column;
+      align-items: center;
+    }
+    #logo{
+        width:100%;
+        margin-top: -20%;
+        margin-left: 20%;
+        height: auto;
+    }
+    #clearAllLists{
+        margin-left: 15%;
+        margin-top: -30%;
+    }
+    .appname{
+        font-size: 20px;
+        margin-top:-35%;
+        margin-left: -10%;
+    }
+    #welcome-paragraph{
+        margin-left: -10%;
+        width: 50px;
+        flex-direction: column;   
+    }
+    #welcome-paragraph {
+        width: 110%;
+    }
+    #landing-page-button{
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+        margin-left: 5%;
+       
+
+    }
+    .homepageContainer{
+        margin-left: -5%;
+        width: 100%;
+    }
+    #landing_page{
+        margin-left: -10px;
+    }
+    #welcome-paragraph p{
+        font-size: 15px;
+    }
+    .welcome_heading{
+        font-size: 15px;
+    }
+    .shopping_basket{
+        width: 100%;
+        margin-left: -10%;
+    }
+  
+    .container {
+      max-width: 150%;
+      margin:20px auto;
+      padding:10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+
+    form {
+      flex-direction: column;
+    }
+  
+    form input {
+      margin-left: -50px;
+      margin-bottom: 10px;
+      height: 40px;
+      width: 220px;
+    }
+  
+    form button {
+      height: 50px;
+      width: 150px;
+      margin-left: -15px;
+    }
+  
+    #lists li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+   
+  
+    .deleteList {
+      margin-left: 20;
+      margin-top: -35px;
+      height: 40px;
+    }
+  
+    .markBought {
+      margin-left: -210%;
+      margin-top: 100px;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .removeItem {
+      margin-left:0px;
+      margin-top: 10px;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .item-name{
+      height: 40px;
+      width: 200px;
+      margin-left: -40px;
+      
+    }
+    
+    .item-quantity {
+      height: 40px;
+      width: 200px;
+      margin-left: -40px;
+      margin-top: 10px;
+    }
+  
+    #landing_page {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  
+    .restocklogo {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+    #restocklogo-list-pages {
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+  
+    #logo-listpage {
+      width: 60%;
+      height: auto;
+      margin-left: 30%;
+    }
+  
+    .appname-list-page {
+      font-size: 20px;
+      margin-left:-30%;
+      margin-top: 20px;
+    }
+  }
+
+  
